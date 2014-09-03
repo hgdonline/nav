@@ -1,44 +1,33 @@
-body{
-background:#f1f1f1;
-}
-.header{height:25px;
-background:#000;
-font-size: 12px;}
-.header a{color:#dcdcdc;}
-.fNav{width:900px;
-margin:0 0 0 120px;}
-.nav a{
-padding:0 10px 0 10px;
-height:25px;
-line-height:28px;
-float:left;
-}
-.sNav{
-	width:200px;
-	float:right;
-	margin:0 20px 0 0;
-}
-.sNav a{
-height:25px;
-line-height: 28px;
-margin:0 15px 0 0;
-float:left;
-}
-.nav a:hover{
-	background:#ff4500;
-	color:#fff;
-}
-.searchWrap{
-margin: 0 0 0 50px;
-}
-.searchBox{height:45px;
-margin:20px 0 0 120px;}
-.logo{
-width: 222px;
-height: 45px;
-background: url(images/logo.gif) 0 -36px no-repeat;
-float:left;
-}
+body{ background:#f1f1f1; font-size: 12px; }
+.clearfix:after{content:'\0020';display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{*zoom:1;}
+.fL{float:left;}
+.fR{float:right;}
+
+.container {width: 1000px; margin: 0 auto;}
+
+.header{height:34px; line-height:34px; background:#000; border-bottom:2px solid #2e82ff;}
+.header li{float: left;}
+.header a{display: block; padding: 0 10px; color:#dcdcdc;}
+.header a:hover{ background:#2e82ff; color:#fff; }
+
+.fNav li{margin-right: 20px;}
+.sNav li{margin-left: 20px;}
+
+
+.search{ height:80px; line-height: 80px; border-bottom:1px solid #dcdcdc;}
+.search form{ float:left; margin: 0 50px; }
+.search input{ border: none;height:34px;padding:0 10px;}
+.search .search_input{ width:250px; height:33px;}
+
+.logo{ width:222px; background: url(images/logo.gif) 0 -2px no-repeat; }
+.logo a{ display:block;height:100%; text-indent:-9999em;}
+
+.hot_site{ width:250px; font-size:14px; }
+.hot_site li{ float:left;}
+.hot_site a{ padding:0 5px; color:#2e82ff; font-size:12px;}
+
+.searchBox{height:45px; margin:20px 0 0 120px;}
 .fSearch{
 float:left;
 margin:9px 0 0 30px;
@@ -47,9 +36,7 @@ margin:9px 0 0 30px;
 padding-left: 40px;
 text-align: left;
 }
-.fSearch input{
-border:none;
-}
+
 .s_ipt_wr {
 width: 539px;
 height: 32px;
@@ -95,45 +82,32 @@ cursor: pointer;
 -webkit-appearance: none;
 -webkit-border-radius: 0;
 }
-.hotsite{
-width: 250px;
-font-size: 14px;
-margin: 5px 0 0 420px;
-}
-.hotsite a{
-height:20px;
-line-height:20px;
-float:left;
-padding:0 5px 0 5px;
-color:red;
-}
-.subNav{
-	width:1000px;
-	margin:40px auto 0 auto;
-	overflow: hidden;
-	border:1px solid #ccc;
-}
-.category{
-width:148px;
-height:183px;
-float:left;
-}
-.catbg1{
-background:url(images/div1.gif);
-}
-.catbg2{
-background:url(images/div2.gif);
-}
-.catbg3{
-background:url(images/div3.gif);
-}
-.catbg4{
-background:url(images/div4.gif);
-}
-.siteWrap{
-float: left;
-background:#fff;
-}
+
+/*sites*/
+.site{ height:182px; margin-top:40px; padding-left:148px; border:1px solid #dcdcdc; background-repeat: no-repeat; background-position:-1px -1px; overflow:hidden;}
+.offic{ background-image:url(images/div1.gif); }
+.practical{ background-image:url(images/div2.gif); }
+.academic{ background-image:url(images/div3.gif); }
+.fun{ background-image:url(images/div4.gif); }
+
+.site ul{ background-color: #fff;}
+.site li{ float:left; width:212px; height:75px; padding-bottom:17px; border-right:1px #cdcdcd dashed;}
+.site li.edge{ width:211px; border:none; }
+.site a{ display:block; padding:18px 30px 0; height:100%;}
+
+.site h3{ color:#1E90FF; font-size:14px;}
+.site p{ margin:10px 0 0 0; color:#ccc; line-height:18px; }
+
+.site li:hover{ background:#96d9f9;}
+.site li:hover h3{ color:#fff;}
+.site li:hover p{ color:#e1f5fe;}
+
+.academic li {height:46px; line-height:46px; padding-bottom:0;}
+.academic a {padding:0 30px; color:#1E90FF;}
+.academic a:hover {color:#fff;}
+
+.fun a {padding-top:0;}
+
 .last-siteList{
 border:0!important;}
 .siteList,.linkList{
@@ -212,9 +186,8 @@ cursor:pointer;
 .cate4 li:hover a{
 color:#fff;
 }
-.site2{
+.fun{
 	height:275px;
-	width: 1000px;
 border: 1px solid #dcdcdc;
 background-color: white;
 }
@@ -270,8 +243,10 @@ height:30px;
 .siteLineUl ul a{
 color:#ccc;
 }
-.footer{
-height:120px;
-background:#00a5f2;
-margin:20px 0 0 0;
-}
+.footer{ height:120px; line-height: 120px; font-size:14px;}
+.footer p{ text-align: center;}
+
+.chromeframe{padding:6px 0;border:0;width:100%;text-align:center}
+.chromeframe a{padding:2px 4px;background:#9a4444;color:#FFF}
+.error{background:#f2dede;color:#a42625;line-height:2}
+.error a{color:#fff;font-weight:bold;text-decoration:underline}
